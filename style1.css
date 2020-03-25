@@ -1,0 +1,130 @@
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color:black;
+ }
+.nav-link
+{
+    font-size: 1.2rem;  
+    
+}
+
+.nav-item a:hover
+{
+background-color:orange;
+}
+.nav-item a.current
+{
+color:orange;
+text-decoration-line: underline;
+text-decoration-color: orange;
+}
+.welcome
+{
+   
+    background: url("back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    
+ 
+
+}
+
+.inwelcome
+{
+    text-align:center;
+    font-size: 3rem;
+    color:white;
+    padding-top: 20vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+.lets
+{
+    padding-top: 2vh;
+    color: white;
+    font-size:2rem;
+    font-weight: bolder;
+} 
+
+  
+#title
+{
+    background-color: white;
+   
+
+}
+.navbar
+{
+    background-color: white;
+   
+}
+.intro
+{
+    font-size: 1.5rem;
+    font-weight:bolder;
+    color:white;
+    text-align:center;
+    padding-bottom: 8vh;
+  
+}
+#mainres
+{
+    padding-top:2vh;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 3vh;
+}
+
+
+
+footer.footer {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    .inwelcome
+{
+    text-align:center;
+    font-size: 2rem;
+    color:white;
+    padding-top: 20vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+.lets
+{
+    padding-top: 2vh;
+    color: white;
+    font-size:1.2rem;
+    font-weight: bolder;
+} 
+.intro
+{
+    font-size: 1.2rem;
+    font-weight:bolder;
+    color:white;
+    text-align:center;
+    padding-bottom: 5vh;
+  
+}
+b
+{
+  position: relative;
+font-size: 1.2rem;
+ color:white;
+ 
+}
+
+
+ 
+   
+  }

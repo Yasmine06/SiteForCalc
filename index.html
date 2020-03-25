@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   <!--Font awesome-->
+   <script src="https://kit.fontawesome.com/169af56e98.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <script>
+      $(document).ready(function(){
+        $("#RawLand").click(function(){
+         
+          $("#IndoorEquipment").hide();
+          $("#IndoorSmallCell").hide();
+          $("#SmallCellOnStructure").hide();
+          $("#RoofTopCellSite").hide();
+          $("#CellSiteonStructure").hide();
+       
+         
+          });
+          $(".set1").click(function(){
+                
+                $("#IndoorEquipment").show();
+                $("#IndoorSmallCell").show();
+                $("#SmallCellOnStructure").show();
+                $("#RoofTopCellSite").show();
+                $("#CellSiteonStructure").show();
+    
+                });
+                $("#cls").click(function(){
+                  modal.style.display = "none";
+                });
+        $("#myBtn").click(function(){
+        $("#myBtn").hide();
+        });
+        $("#cls").click(function(){
+        $("#myBtn").show();
+        });
+      });
+  
+   
+      </script>
+</head>
+<body >
+  <section id="title">
+    
+        <!-- Nav Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-top: 2vh;">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" style="height:3rem;width:12rem;"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto " >
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="glossary.html">Glossary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://leaseagree.com/">LeaseAgree.com</a>
+              </li>
+             
+            
+            </ul>
+          
+          </div>
+        </nav>
+  
+<div class="welcome">
+  <div class="inwelcome centered">Welcome to the Cell Site Rent Calculator    </div>
+  <div style="text-align: center;">
+    <div  class="lets"> LET'S GET STARTED</div>
+      
+
+    <button id="myBtn" class="btn1" onclick="hid();">Calculator</button>
+    
+  </div>
+    <div class="intro" id="intro">
+      Answer 4 questions for a FREE estimate of how much Telecom and Cell Site Rent your property could earn.
+     
+    </div>
+  </div>
+ 
+  <div class="container">
+      <center> <div class="calcu" id="calc">
+            <span class="close" style="color: white; opacity: 1;font-size: 1.75rem;font-weight: bold;" id="cls" onclick="start('mcq1','mcq2','mcq3','mcqC1','mcqC2','mcqC3','mcqC4','myForm','right');clearBox('res','resimg');">&times;</span>
+            <div class="content">
+                <div >
+                   
+                  <div class="mcq1" id="mcq1" style="display:block;"> <b>1. Select the current Property Type/Use 	</b>
+                  <form style="margin-top: 2vh;font-weight: bolder; ">
+                    <div class="row  d-flex justify-content-center">
+                        <label >
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 ">  <a href="javascript:SwapDivsWithClick('mcq1','mcq2')"> <input type="button" id="Residential" value="Residential" name="one" onclick="mcq1(this.id)"/></a>
+                            </div> </label>
+                        <br>
+         <label>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">  <a href="javascript:SwapDivsWithClick('mcq1','mcq2')">  <input type="button" id="OfficeBuilding/MDU" value="Office Building/MDU" name="one" onclick="mcq1(this.id)"/></a>
+            </div>  </label>
+                    </div>
+                  
+                     <div class="row  d-flex justify-content-center">
+         <label>  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><a href="javascript:SwapDivsWithClick('mcq1','mcq2')">
+                          <input type="button" id="Industrial/Farm" value="Industrial/Farm" name="one" onclick="mcq1(this.id)"/></a>
+         </div></label> <br>
+         <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"> <a href="javascript:SwapDivsWithClick('mcq1','mcq2')">
+                          <input type="button" id="RawLand" value="Undeveloped Land" name="one" onclick="mcq1(this.id)"/></a>
+                       </div> </label> 
+                     </div><br>
+                     <br>    
+                      </form>
+                  </div> 	
+      
+                  <div class="mcq2" style="display:none;" id="mcq2">  <b> 2. Select the Neighborhood Type   </b>		
+                    <form style="margin-top: 2vh;font-weight: bolder;">
+                        <div class="row  d-flex justify-content-center">
+                        <label>
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <a href="javascript:SwapDivsWithClick1('mcq2','mcq3')"> 
+                        <input type="button" id="DowntownMetro" value="Downtown Metro" name="two" onclick="mcq2(this.id)"/></a></div></label>
+                       
+        <br><label>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <a href="javascript:SwapDivsWithClick1('mcq2','mcq3')"> 
+                        <input type="button" id="Urban" value="Urban" name="two" onclick="mcq2(this.id)"/></a></div></label>
+                        </div>  
+                        <div class="row  d-flex justify-content-center">       
+        <br><label>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <a href="javascript:SwapDivsWithClick1('mcq2','mcq3')"> 
+                        <input type="button" id="Suburban" value="Suburban" name="two" onclick="mcq2(this.id)"/></a></div></label>
+                       
+        <br><label>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <a href="javascript:SwapDivsWithClick1('mcq2','mcq3')"> 
+                        <input type="button" id="Small City" value="Small City" name="two" onclick="mcq2(this.id)"/></a></div></label>
+                        </div> 
+                        <div class="row  d-flex justify-content-center">
+                   <br>    <label>
+                    <a href="javascript:SwapDivsWithClick1('mcq2','mcq3')"> 
+                   <input type="button" id="Rural" value="Rural" name="two" onclick="mcq2(this.id)"/></a></label>
+                        </div>
+              
+                 <button class="back set1"><a style="text-decoration: none;color: black;" href="javascript: goback1('mcq2','mcq1')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+                    </form>
+                </div> 	
+        
+        <div class="mcq3" id="mcq3" style="display:none;"> <b>3. Select a type of Telecom Equipment to see the Potential Rent	</b>
+            <form style="margin-top: 2vh;font-weight: bolder; ">
+              <div class="row  d-flex justify-content-center">
+                
+        <label> <div style="margin-right: 1vw;" > <a href="javascript:SwapDivsC1('mcq3','mcqC1')">
+                    <input type="button" id="SmallCellSite" value="Small Cell Site" name="three" onclick="mcq3(this.id)"/></a>
+                 </div> </label> 
+                 <label> <div style="margin-right: 1vw;" > <a href="javascript:SwapDivsC2('mcq3','mcqC2')">
+                    <input type="button" id="FullCellSite" value="Full Size Cell Site" name="three" onclick="mcq3(this.id)"/></a>
+                 </div> </label> 
+              </div>
+              <div class="row  d-flex justify-content-center">
+                 <label> <div style="margin-right: 1vw;"> <a href="javascript:SwapDivsC3('mcq3','mcqC3')">
+                    <input type="button" id="Fiber" value="Fiber" name="three" onclick="mcq3(this.id)"/></a>
+                 </div> </label> 
+                 <label> <div style="margin-right: 1vw;"> <a href="javascript:SwapDivsC4('mcq3','mcqC4')">
+                    <input type="button" id="IndoorEquipment" value="Indoor Equipment" name="three" onclick="mcq3(this.id)"/></a>
+                 </div> </label> 
+               </div>
+                 
+               <button class="back"><a style="text-decoration: none;color: black;" href="javascript: goback2('mcq3','mcq2')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+                </form>
+            </div> 	
+        <div class="mcqC1 " style="display:none;" id="mcqC1"><b> 4. Select a type of Telecom Equipment to see the Potential Rent  </b>
+            <form style="margin-top: 2vh;font-weight: bolder;">
+                <div class="row  d-flex justify-content-center">   
+                  
+                <label>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <a href="javascript:check('mcqC1','myForm','right')">
+                <input type="button" id="OutdoorSmallCell" value="Outdoor Small Cell"  name="four" onclick="mcq4(this.id)"/>
+                    </a></div></label>
+                    <label>  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="javascript:check('mcqC1','myForm','right')">
+                                    <input type="button" id="SmallCellOnNewPole" value="Small Cell On New Pole"  name="four" onclick="mcq4(this.id)"/>
+                        </a></div></label>
+                </div>
+                <div class="row  d-flex justify-content-center">   
+        
+                    <br>
+                    <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="javascript:check('mcqC1','myForm','right')"> 
+                    <input type="button" id="IndoorSmallCell" value="Indoor Small Cell" name="four" onclick="mcq4(this.id)"/>
+                        </a></div></label>
+                    <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="javascript:check('mcqC1','myForm','right')">
+                            <span class="hid"><input type="button" id="SmallCellOnStructure" value="Small Cell On Structure"  name="four" onclick="mcq4(this.id)"/>
+                            </span></a></div></label>
+                                    </div>
+                                    <button class="back"><a style="text-decoration: none;color: black;" href="javascript: goback2('mcqC1','mcq3')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+            </form>
+        </div>
+        <div class="mcqC2 mcq4" style="display:none;" id="mcqC2"><b> 4. Select a type of Telecom Equipment to see the Potential Rent  </b>
+            <form style="margin-top: 2vh;font-weight: bolder;">
+            <div class="row  d-flex justify-content-center">          
+                <label>  <div style="margin-right: 1vw;">
+                    <a href="javascript:check('mcqC2','myForm','right')">    
+                           <input type="button" id="CellTower" value="Cell Tower"  name="four" onclick="mcq4(this.id)"/>
+                    </a></div></label>
+                    <label> <div style="margin-right: 1vw;">
+                        <a href="javascript:check('mcqC2','myForm','right')"> 
+                       <input type="button" id="RoofTopCellSite" value="Roof Top Cell Site"  name="four" onclick="mcq4(this.id)"/>
+                   <span class="hid"></span>  </a></div></label>
+                                </div>
+                                <div class="row  d-flex justify-content-center"> 
+                   <br>  <label>
+                    <a href="javascript:check('mcqC2','myForm','right')">
+                       <input type="button" id="CellSiteonStructure" value="Cell Site On Structure"  name="four" onclick="mcq4(this.id)"/>
+                      </a></label></div>
+                      <button class="back"><a style="text-decoration: none;color: black;" href="javascript: goback2('mcqC2','mcq3')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+                            </form>
+        </div>
+        <div class="mcqC3 mcq4" style="display:none;" id="mcqC3"><b> 4. Select a type of Telecom Equipment to see the Potential Rent  </b>
+            <form style="margin-top: 2vh;font-weight: bolder;">
+                <div class="row  d-flex justify-content-center" >   
+                    <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                      <a href="javascript:check('mcqC3','myForm','right')">
+                    <input type="button" id="FiberHut" value="Fiber Hut"  name="four" onclick="mcq4(this.id)"/>
+                      </a></div></label>
+              <br>  <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <a href="javascript:check('mcqC3','myForm','right')">
+                    <input type="button" id="FiberTerminal" value="Fiber Terminal"  name="four" onclick="mcq4(this.id)"/>
+                  </a></div></label>
+                 </div>
+                 <button class="back"><a style="text-decoration: none;color: black;" href="javascript: goback2('mcqC3','mcq3')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+                            </form>
+        </div>
+        <div class="mcqC4 mcq4" style="display:none;" id="mcqC4"><b> 4. Select a type of Telecom Equipment to see the Potential Rent  </b>
+            <form style="margin-top: 2vh;font-weight: bolder;">
+                <div class="row  d-flex justify-content-center" >   
+                    <label> <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                       <a href="javascript:check('mcqC4','myForm','right')">  
+                    <input type="button" id="MiniDataCenter" value="Mini Data Center"  name="four" onclick="mcq4(this.id)"/>
+                       </a></div></label>
+                         
+                        <br>  <label><div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                           <a href="javascript:check('mcqC4','myForm','right')">
+                              <input type="button" id="DedicatedRoom" value="Dedicated Room"  name="four" onclick="mcq4(this.id)"/>
+                             </a></div></label></div>
+                            </form>
+                            <button class="back"><a style="text-decoration: none;color: black;" href="javascript: goback2('mcqC4','mcq3')"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></button> 
+        </div>  
+        <br>
+        
+                <div id="myForm" style="display:none;overflow: auto;" class="myForm">
+                    <div class="container-fluid bg"> 
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-xs-12"></div>
+                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                <form class="form-container form-container1" action="javascript:SwapDivsWithClick4('myForm','right')" >
+                                    <div style="font-size: 1.5rem;">User Information</div><br>
+                                    <div class="form-group">
+                
+                                        <label for="FirstName">FirstName</label>
+                                        <div class="input-group">
+                                           
+                                            <input type="text" class="form-control" id="Firstname" placeholder="FirstName"required/>
+                                        </div>
+                                        <label for="LastName">LastName</label>
+                                        <div class="input-group">
+                                           
+                                            <input type="text" class="form-control" id="LastName" placeholder="LastName" required/>
+                                        </div>
+                
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                            <input type="email" class="form-control" id="Email1" placeholder="Email" required/>
+                                        </div>
+                                    </div>
+                                   
+                                  
+                                    <div>
+                                      <input type="submit" style="text-decoration: none;" class="btn btn-success btn-block" id="save" value="Get Results"/>
+                                    </div><br>
+                                    <div>
+                                        <button class="back" id="decide" style="font-size: 0.8rem;color:black;"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</button>      
+        
+                                    </div> 
+                                </form>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                        </div>
+                    </div>
+                  </div>
+                  <div  id="right" class="right"  style="display: none; color:white; overflow-wrap: break-word;">
+                    <div class="row  d-flex justify-content-center">
+                    <h1  class="result" style="text-align: center;font-size: 2rem;margin-top: -20px;">Result</h1>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="padding-left:3vw;padding-right: 3vw;padding-top: 1vh;">
+                     <div id="resimg" class="col-lg-6"> </div>
+                     <div id="res" class="col-lg-6">     </div>
+                     <br>
+                 
+                
+                  </div>
+                
+                  <p class="dis" style="font-size: 0.9rem;">  Expected Rent and Current Value are estimates based on user inputs and are subject to change.</p>
+                  <div class="row  d-flex justify-content-center" >
+                  
+                    
+                    <button type="button"  class="btn btn-warning resetbt set1" id="save "  onclick="goToForm('right','mcq1');clearBox('res','resimg');">RESET</button> 
+                  </div>
+             </div>
+        
+               
+                </div>
+                </div>
+             
+     
+        
+        <script src="cal.js"></script>
+        
+      </div>
+      </center>
+    </div>
+  </section>
+   <!-- Footer -->
+
+  <footer class="footer" >
+    <div class="container"><div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item mx-2">
+            <a href="https://www.facebook.com/LeaseAgree-114127683361089/" target="_blank" rel="noopener noreferrer" style="color:#707070;"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item mx-2"><a href="https://www.linkedin.com/company/leaseagree/about/" target="_blank" rel="noopener noreferrer" style="color:#707070;"><i class="fab fa-linkedin-in"></i></a></li></ul></div>
+            <div class="col-lg-6 h-100 text-center text-lg-right my-auto"><ul class="list-inline mb-0 site-links"><li class="list-inline-item"><a class="small" href="https://leaseagree.com/about-us"  style="color:#707070;text-decoration: none;">About Us</a></li><li class="list-inline-item">⋅</li>
+    <li class="list-inline-item"><a class="small" href="https://leaseagree.com/privacy-policy" style="color:#707070;text-decoration: none;">Privacy Policy</a></li></ul><p class="text-muted small my-2 mb-lg-0">© LeaseAgree 2019. All Rights Reserved.</p></div>
+  </div></div></footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
